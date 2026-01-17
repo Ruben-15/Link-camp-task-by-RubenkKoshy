@@ -1,4 +1,4 @@
-/* ================= MOBILE NAV ================= */
+/*MOBILE NAV*/
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 
@@ -17,7 +17,7 @@ if (menuToggle && nav) {
 }
 
 
-/* ================= COUNTDOWN TIMER ================= */
+/* COUNTDOWN TIMER */
 const eventDate = new Date("March 15, 2025 09:00:00").getTime();
 
 const daysEl = document.getElementById("days");
