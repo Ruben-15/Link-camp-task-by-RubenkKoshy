@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (scrollY >= sectionTop) current = section.getAttribute("id");
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+<script>
+  const fadeEls = document.querySelectorAll(".fade-up");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  fadeEls.forEach(el => observer.observe(el));
+</script>
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LINK CAMP 2025 | IEEE LINK</title>
+
+  <!-- Meta for SEO -->
+  <meta name="description" content="LINK CAMP 2025 – An IEEE LINK initiative to empower student leaders and innovators." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="container nav-content">
+
+    <div class="brand">
+      <img src="assets/images/ieee-logo.png" alt="IEEE Logo" class="ieee-logo">
+      <span class="brand-text">LINK CAMP 2025</span>
+    </div>
+
+    <button class="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="primary-navigation">
+      ☰
+    </button>
+
+    <nav class="nav" id="primary-navigation">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#register" class="btn-primary">Register</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+
+      <span class="badge">IEEE LINK Presents</span>
+
+      <h2>LINK CAMP 2025</h2>
+
+      <p class="hero-subtitle">
+        A flagship leadership and networking camp designed to empower
+        IEEE student members and aspiring innovators.
+      </p>
+
+      <div class="hero-info">
+       <div>
+  <i class="fa-regular fa-calendar"></i>
+  <strong>Date</strong>
+  <span>To be announced</span>
+</div>
+
+        <div>
+  <i class="fa-solid fa-location-dot"></i>
+  <strong>Venue</strong>
+  <span>Kerala, India</span>
+</div>
+
+
+      <div class="countdown">
+        <div class="count-box">
+          <span id="days">00</span>
+          <small>Days</small>
+        </div>
+        <div class="count-box">
+          <span id="hours">00</span>
+          <small>Hours</small>
+        </div>
+        <div class="count-box">
+          <span id="minutes">00</span>
+          <small>Minutes</small>
+        </div>
+        <div class="count-box">
+          <span id="seconds">00</span>
+          <small>Seconds</small>
+        </div>
+      </div>
+
+      <a href="#register" class="btn-primary hero-btn">Register Now</a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <div class="container">
+    <h3>About LINK CAMP</h3>
+    <p>
+      LINK CAMP 2025 brings together IEEE student members and aspiring innovators
+      for a transformative experience focused on leadership, collaboration,
+      and personal growth.
+    </p>
+  </div>
+</section>
+
+<!-- ================= WHY ATTEND ================= -->
+<section id="why-attend" class="section light-bg">
+  <div class="container">
+
+    <h3>Why Attend LINK CAMP 2025?</h3>
+    <p class="section-subtitle">
+      LINK CAMP 2025 is designed to provide meaningful experiences that
+      help students grow as leaders, collaborators, and innovators.
+    </p>
+
+  <div class="about-grid">
+  <div class="about-card">
+    <span class="about-icon">⭐</span>
+    <h4>Leadership Development</h4>
+    <p>Build leadership, teamwork, and communication skills through interactive sessions.</p>
+  </div>
+
+  <div class="about-card">
+    <span class="about-icon">🤝</span>
+    <h4>Networking Opportunities</h4>
+    <p>Connect with IEEE leaders, volunteers, and peers from across the LINK region.</p>
+  </div>
+
+  <div class="about-card">
+    <span class="about-icon">🛠️</span>
+    <h4>Hands-on Activities</h4>
+    <p>Engage in collaborative and practical activities designed for real learning.</p>
+  </div>
+
+  <div class="about-card">
+    <span class="about-icon">🌐</span>
+    <h4>Exposure to IEEE LINK</h4>
+    <p>Learn about IEEE LINK initiatives and opportunities to grow within IEEE.</p>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<!-- ================= SCHEDULE ================= -->
+<section id="schedule" class="section">
+  <div class="container">
+
+    <h3>Event Schedule</h3>
+    <p class="section-subtitle">
+      A structured timeline designed to maximize learning, interaction,
+      and networking throughout LINK CAMP 2025.
+    </p>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <span class="time">09:00 AM</span>
+        <div>
+          <h4>Inauguration & Welcome</h4>
+          <p>Opening ceremony and introduction to LINK CAMP 2025.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="time">10:00 AM</span>
+        <div>
+          <h4>Leadership Session</h4>
+          <p>Interactive session on leadership and IEEE opportunities.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="time">01:00 PM</span>
+        <div>
+          <h4>Networking & Activities</h4>
+          <p>Hands-on activities and networking with peers and mentors.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="time">04:00 PM</span>
+        <div>
+          <h4>Closing & Feedback</h4>
+          <p>Summary, feedback collection, and closing remarks.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= REGISTER ================= -->
+<section id="register" class="section register-section">
+  <div class="container">
+    <div class="register-box">
+
+      <h3>Ready to Join LINK CAMP 2025?</h3>
+
+      <p class="register-text">
+        Registrations are open to IEEE student members and interested college students.
+        Don’t miss the opportunity to learn, connect, and grow with IEEE LINK.
+      </p>
+
+      <a href="#" class="btn-primary register-btn">
+        🚀 Go to Registration
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 IEEE LINK. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+</body>
+</html>
