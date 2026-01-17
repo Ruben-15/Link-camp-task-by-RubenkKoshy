@@ -51,4 +51,4 @@ js/
  main.js
 assets/
 images/
-EADME.md
+README.md
