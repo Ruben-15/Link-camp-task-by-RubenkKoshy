@@ -7,7 +7,7 @@ The goal of this website is to clearly present event details while maintaining a
 ---
 
 ## 🔗 Live Website
-https://ruben-15.github.io/link-camp-task-by-RubenkKoshy/
+https://ruben-15.github.io/Link-camp-task-by-RubenkKoshy/
 
 ---
 
