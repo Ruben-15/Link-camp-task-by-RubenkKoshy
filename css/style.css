@@ -364,7 +364,7 @@ body {
 
 @media (max-width: 600px) {
   .hero-content {
-    padding: 2rem 1.4rem; /* reduced height */
+    padding: 2rem 1.4rem; 
   }
 
   .hero {
@@ -420,7 +420,7 @@ body {
 /* ============ FORCE SINGLE-LINE COUNTDOWN (FINAL) ============ */
 .countdown {
   display: flex !important;
-  flex-wrap: nowrap !important;   /* 🔥 THIS IS THE KEY */
+  flex-wrap: nowrap !important; 
   justify-content: space-between;
   align-items: center;
   gap: 0;
@@ -433,7 +433,7 @@ body {
 }
 
 .count-box {
-  flex: 1;                /* 🔥 equal width */
+  flex: 1;                
   text-align: center;
 }
 
@@ -480,7 +480,7 @@ body {
 
   .countdown {
     width: 100%;
-    margin: 1.4rem 0 1.6rem;   /* inside spacing */
+    margin: 1.4rem 0 1.6rem;  
     padding: 1rem 0.4rem;
     background: #f9fbfd;
     border-radius: 14px;
@@ -526,7 +526,7 @@ body {
 @media (max-width: 600px) {
 
   #about .container {
-    background: rgba(255, 255, 255, 0.92); /* slight transparency */
+    background: rgba(255, 255, 255, 0.92); 
     backdrop-filter: blur(6px);
     border-radius: 20px;
     padding: 1.8rem 1.6rem;
@@ -538,13 +538,13 @@ body {
 
 /* ===== MOVE ABOUT SECTION SLIGHTLY UP (FINAL FIX) ===== */
 #about {
-  margin-top: -4.5rem;   /* move it upward */
-  padding-top: 4rem;     /* keep text spacing safe */
+  margin-top: -4.5rem;  
+  padding-top: 4rem;  
 }
 
 @media (max-width: 600px) {
   #about {
-    margin-top: -3.6rem; /* mobile fine-tune */
+    margin-top: -3.6rem;
     padding-top: 3.6rem;
   }
 }
@@ -627,13 +627,13 @@ html {
 
 /* ===== FINAL ABOUT POSITION FIX ===== */
 #about {
-  margin-top: -2.2rem;   /* pulls About upward */
-  padding-top: 3.2rem;   /* keeps content safe */
+  margin-top: -2.2rem;  
+  padding-top: 3.2rem;  
 }
 
 @media (max-width: 600px) {
   #about {
-    margin-top: -1.6rem; /* mobile fine tune */
+    margin-top: -1.6rem; 
     padding-top: 3rem;
   }
 }
