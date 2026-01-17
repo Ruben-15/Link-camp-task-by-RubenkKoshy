@@ -44,3 +44,11 @@ No frameworks used — kept it simple and understandable.
 ---
 
 ## Folder Structure
+ index.html
+css/
+ style.css
+js/
+ main.js
+assets/
+images/
+EADME.md
